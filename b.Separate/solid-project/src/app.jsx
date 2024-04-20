@@ -4,11 +4,26 @@ import { FileRoutes } from "@solidjs/start/router";
 import { Suspense } from "solid-js";
 import "./app.css";
 
- function App() {
-  const login = () => fetch('/api/login', {method: 'post'})
+export default function App() {
+  const login = () => fetch('http://localhost:5215/api/login', {method: 'post'})
   return (
-   <div class={styles.App}>
-   <button onClick={login}>Login</button>
-   </div>
-  );
+
+  <div>
+    <button onClick={login}>Login</button>
+  </div>
+
+);
 }
+
+// <Router
+//   root={props => (
+//     <MetaProvider>
+//       <Title>SolidStart - Basic</Title>
+//       <a href="/">Index</a>
+//       <a href="/about">About</a>
+//       <Suspense>{props.children}</Suspense>
+//     </MetaProvider>
+//   )}
+// >
+//   <FileRoutes />
+// </Router>
