@@ -1,0 +1,1 @@
+export { default } from "file:///C:/Users/George%20Too/source/repos/ASPNETCORESpaCookiedAuthentication/c.SsrFramework/NuxtProject/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
